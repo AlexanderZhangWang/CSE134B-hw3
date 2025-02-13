@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        aside {border: solid}
+        section {border: solid}
+        .skill li {
+            color: rgb(94, 234, 212);
+            padding: 0.25rem 0.75rem 0.25rem 0.75rem;
+            background-color: rgba(45, 212, 191, 0.1);
+            border-radius: 9999px; 
+            display: inline-flex;
+            align-items: center;
+            border: 0 solid #e5e7eb;
+            font-family: sans-serif;
+            font-size: 1rem;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Alexander Zhang</h1>
+        <h2>Full Stack Software Engineer</h2>
+        <p>A passion software engineer.</p>
+        <aside>
+            <p>
+                I am a third year computer science major at UCSD. I am interested in <strong>Software Engineering</strong>.
+            </p>
+            <nav>
+                <a href="https://github.com/AlexanderZhangWang">Github</a> |
+                <a href="https://www.linkedin.com/in/alexander-zhang-wang/">Linkedin</a> |
+                <a href="mailto:alexanderzhangwang@hotmail.com">Email</a> |
+                <a href="lab.html">Lab</a> 
+            </nav>
+        </aside>
+    </header>
+
+    <main>
+        <noscript>This browser does not support Javascript</noscript>
+        
+        <hr>
+
+        <section id="experience">
+            <h2>Experience</h2>
+            <div>
+                <ol class="experience_list">
+                    <li>
+                        <header>January 2025 - Present</header>
+                        <div>
+                            <h3>
+                                <span>
+                                    Instructional Assistant / Tutor · <i>UCSD CSE</i>
+                                </span>
+                            </h3>
+                            <p>
+                                CSE 130 Programming Languages - Teaching and tutoring <b>Lambda Calculus</b> and <b>Haskell</b>.
+                            </p>
+                            <ul class="skill">                              
+                                <li>Lambda Calculus</li>
+                                <li>Haskell</li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li>
+                        <header>July 2024 - August 2024</header>
+                        <div>
+                            <h3>
+                                <span>
+                                    IT Development Intern · <em>Hongji (Suzhou) Automotive Parts</em>
+                                </span>
+                            </h3>
+                            <p>
+                                Developed and optimized Java modules to integrate JSON data from China Merchants Bank APIs, automating daily updates in
+                                SQL Server and improving <abbr title="Office Automation">OA</abbr> system data retrieval efficiency by 50%.                            </p>
+                            <ul class="skill">
+                                <li>Java</li>
+                                <li>Sql Server</li>
+                                <li>React</li>
+                                <li>PostgreSql</li>
+                                <li>ERP</li>
+                                <li>MES</li>
+                            </ul>
+                        </div>
+                    </li>
+                </ol>
+            </div>
+            <button type="button">View Full Resume</button>
+        </section>
+
+        <section id="projects">
+            <h2>Projects</h2>
+            <div>
+                <ol class="project_list">
+                    <li>
+                        <header>December 2023 - March 2024</header>
+                        <div>
+                            <h3>
+                                <span>
+                                    Successorator 
+                                    <a href="https://github.com/CSE-110-Winter-2024/project-team-25">
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        width="12"
+                                        height="12"
+                                        viewBox="0 0 16 12">
+                                        <line
+                                            x1="3"
+                                            y1="13"
+                                            x2="13"
+                                            y2="3"
+                                            stroke="currentColor"
+                                            stroke-width="2"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                        />
+                                        <polyline
+                                            points="8,3 13,3 13,8"
+                                            fill="none"
+                                            stroke="currentColor"
+                                            stroke-width="2"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                        />
+                                    </svg>
+                                    </a>
+                                </span>
+                            </h3>
+                            <p>
+                                Led a team of six to develop Success List, an Android task management app, leveraging Java, XML, and SQLite for seamless UI
+                                design and efficient persistent data storage.                            </p>
+                            <ul class="skill">
+                                <li>Java</li>
+                                <li>Android Studio</li> 
+                            </ul>
+                            <figure>
+                                <picture>
+                                    <source media="(min-width: 800px)" srcset="images/successorator_m.png">
+                                    <source media="(min-width: 400px)" srcset="images/successorator_s.png">
+                                    <img src="images/successorator_l.png" alt="Project Screenshot">
+                                </picture>
+                                <figcaption>Successorator App</figcaption>
+                            </figure>
+                        </div>
+                    </li>
+
+                    <li>
+                        <header>September 2023 - December 2023</header>
+                        <div>
+                            <h3>
+                                Vymsical Music Guessing Game
+                            </h3>
+                            <p>
+                                Collaborated in a team of four to develop Vymsical, an interactive music quiz game using Next.js, where players identify songs from
+                                50 tracks, scoring based on response time.
+                            </p>
+                            <ul class="skill">
+                                    <li>Vercel</li>
+                                    <li>Next.js</li>
+                            </ul>
+                            <figure>
+                                <picture>
+                                    <source media="(min-width: 800px)" srcset="images/vymsical_proj_m.png">
+                                    <source media="(min-width: 400px)" srcset="images/vymsical_proj_s.png">
+                                    <img src="images/vymsical_proj_l.png" alt="Project Screenshot">
+                                </picture>
+                                <figcaption>Vymsical Music Guessing Game</figcaption>
+                            </figure>
+                        </div>
+                    </li>
+                </ol>
+            </div>
+            <a href="project_list.html">
+                View Full Project List
+            </a>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <details>
+                <summary>Contact infomation</summary>
+                <form action="/submit" method="post">
+                    <fieldset>
+                        <legend>Your Details</legend>
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+                        <br>
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                        <br>
+                        <label for="topic">Topic:</label>
+                        <input list="topics" id="topic" name="topic">
+                        <datalist id="topics">
+                            <option value="Job Opportunity">
+                            <option value="Collaboration">
+                            <option value="Question">
+                            <option value="Other"></option>
+                        </datalist>
+                        <br>
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" rows="4" required></textarea>
+                        <br>
+                        <button type="submit">Send</button>
+                    </fieldset>
+                  </form>
+            </details>
+          </section>
+    </main>
+	
+    <footer>
+        
+    </footer>
+
+    <hello-world></hello-world>
+
+    <script>
+        class HelloWorldElement extends HTMLElement {
+        connectedCallback() {
+            console.log("Hello World");
+        }
+        }
+        customElements.define('hello-world', HelloWorldElement);
+    </script>
+</body>
+
+</html>
