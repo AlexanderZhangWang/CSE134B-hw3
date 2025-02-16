@@ -1,5 +1,5 @@
 * {
-    /* background-color: rgb(15 23 42); */
+    background-color: rgb(15 23 42) !important;
     border: solid;
     padding: 0;
     margin: 0;
@@ -93,7 +93,7 @@ nav {
     margin: 0.2rem;
     padding: 0.2rem;
 }
-#experience h2 {
+#experience h2, #projects h2 {
     margin: 1rem;
     padding: 1rem;
     font-size: 2rem;
@@ -114,7 +114,11 @@ nav {
     font-family: sans-serif;
     font-size: 1rem;
 }
-
+.resume {
+    margin: 0.2rem;
+    padding: 0.4rem;
+    border-radius: 5px;
+}
 /* Phone */
 @media (max-width: 480px) {
     * {
