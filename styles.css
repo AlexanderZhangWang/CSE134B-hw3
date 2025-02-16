@@ -1,0 +1,77 @@
+* {
+    /* background-color: rgb(15 23 42); */
+    border: solid;
+    padding: 0;
+    margin: 0;
+}
+h1, h2, h3 {
+    color: rgb(226, 232, 240);
+}
+p {
+    color: #94A3B8;
+}
+body>header {
+    display: flex;
+}
+aside {
+    text-align: left;
+}
+.light-white {
+    color: #94A3B8;
+}
+strong, bold{
+    color : #E2E8F0;
+}
+li header{
+    color: #64748B;
+}
+nav {
+    color: #94A3B8;
+    display: flex;
+    gap: 1rem;
+}
+.sr {
+    position: absolute;
+    clip: rect(0, 0, 0, 0);
+}
+.logo {
+    width: 1.5rem;
+    height: 1.5rem;
+    fill: #94A3B8;
+}
+.logo:hover {
+    fill: #E2E8F0;
+}
+.skill li {
+    color: rgb(94, 234, 212);
+    padding: 0.25rem 0.75rem 0.25rem 0.75rem;
+    background-color: rgba(45, 212, 191, 0.1);
+    border-radius: 9999px; 
+    display: inline-flex;
+    align-items: center;
+    border: 0 solid #e5e7eb;
+    font-family: sans-serif;
+    font-size: 1rem;
+}
+/* Phone */
+@media (max-width: 480px) {
+    * {
+        background-color: blue;
+    }
+}
+/* Laptop */
+@media (min-width: 481px) and (max-width: 1024px) {
+    * {
+        background-color: yellow;
+    }
+}
+/* Destop */
+@media (min-width: 1025px) {
+    * {
+        background-color: green;
+    }
+    body>header {
+        flex-direction: row;
+        background-color: black;
+    }
+}
