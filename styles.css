@@ -7,8 +7,24 @@
 h1, h2, h3 {
     color: rgb(226, 232, 240);
 }
+
 p {
     color: #94A3B8;
+}
+#myself {
+    margin: 0.2rem ;
+    padding: 0.2rem;
+}
+#myself h1 {
+    margin: 0.2rem;
+    padding: 0.2rem;
+    font-size: 3rem;
+}
+#myself h2 {
+    margin: 0.2rem;
+}
+#myself p {
+    margin: 0.2rem;
 }
 body>header {
     display: flex;
@@ -58,11 +74,17 @@ nav {
     * {
         background-color: blue;
     }
+    body>header {
+        flex-direction: column;
+    }
 }
 /* Laptop */
 @media (min-width: 481px) and (max-width: 1024px) {
     * {
         background-color: yellow;
+    }
+    body>header {
+        flex-direction: column;
     }
 }
 /* Destop */
@@ -72,6 +94,9 @@ nav {
     }
     body>header {
         flex-direction: row;
-        background-color: black;
+    }
+    #myself{
+        width: 50%;
+        background-color: aqua;
     }
 }
