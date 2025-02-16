@@ -7,12 +7,11 @@
 h1, h2, h3 {
     color: rgb(226, 232, 240);
 }
-
 p {
     color: #94A3B8;
 }
 #myself {
-    margin: 0.2rem ;
+    margin: 0.2rem;
     padding: 0.2rem;
 }
 #myself h1 {
@@ -22,29 +21,41 @@ p {
 }
 #myself h2 {
     margin: 0.2rem;
+    padding: 0.2rem;
+    font-size: 1rem;
 }
 #myself p {
     margin: 0.2rem;
+    font-size: 1rem;
 }
-body>header {
+body > header {
     display: flex;
+    flex-direction: column;
+    margin: 2rem;
 }
 aside {
     text-align: left;
+    padding: 0.2rem;
+}
+aside p {
+    margin: 0.2rem;
+    padding: 0.2rem;
 }
 .light-white {
     color: #94A3B8;
 }
-strong, bold{
-    color : #E2E8F0;
+strong, bold {
+    color: #E2E8F0;
 }
-li header{
+li header {
     color: #64748B;
 }
 nav {
     color: #94A3B8;
     display: flex;
     gap: 1rem;
+    margin: 0.2rem;
+    padding: 0.2rem;
 }
 .sr {
     position: absolute;
@@ -58,24 +69,62 @@ nav {
 .logo:hover {
     fill: #E2E8F0;
 }
+.experience_list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.experience_list li {
+    margin-bottom: 0.5rem;
+    margin-top: 0.5rem;
+}
+.experience_list li header {
+    margin: 0.2rem;
+    padding: 0.2rem;
+}
+.experience_list li div h3 {
+    margin: 0.2rem;
+    padding: 0.2rem;
+}
+.experience_list li div h3 em {
+    display: inline;
+}
+.experience_list li div p {
+    margin: 0.2rem;
+    padding: 0.2rem;
+}
+#experience h2 {
+    margin: 1rem;
+    padding: 1rem;
+    font-size: 2rem;
+}
+.skill {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.3rem;
+}
 .skill li {
     color: rgb(94, 234, 212);
-    padding: 0.25rem 0.75rem 0.25rem 0.75rem;
+    padding: 0.25rem 0.75rem;
     background-color: rgba(45, 212, 191, 0.1);
-    border-radius: 9999px; 
+    border-radius: 9999px;
     display: inline-flex;
     align-items: center;
     border: 0 solid #e5e7eb;
     font-family: sans-serif;
     font-size: 1rem;
 }
+
 /* Phone */
 @media (max-width: 480px) {
     * {
         background-color: blue;
     }
-    body>header {
+    body > header {
         flex-direction: column;
+    }
+    #myself, aside {
+        width: 100%;
     }
 }
 /* Laptop */
@@ -83,8 +132,33 @@ nav {
     * {
         background-color: yellow;
     }
-    body>header {
+    body > header {
         flex-direction: column;
+    }
+    #myself {
+        width: 100%;
+    }
+    aside {
+        width: 100%;
+        margin: 0.2rem;
+        padding: 0.2rem;
+    }
+    .experience_list > li {
+        display: flex;
+        width: 100%;
+        align-items: stretch;
+    }
+    .experience_list li header {
+        display: flex;
+        width: 15vw;
+    }
+    .experience_list li div {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+    }
+    .experience_list li div h3 em {
+        display: block;
     }
 }
 /* Destop */
@@ -92,11 +166,32 @@ nav {
     * {
         background-color: green;
     }
-    body>header {
+    body > header {
         flex-direction: row;
+        justify-content: space-between;
+        align-items: stretch;
+        padding: 0.5rem;
+        gap: 1rem;
     }
-    #myself{
+    #myself {
         width: 50%;
-        background-color: aqua;
+    }
+    aside {
+        width: 50%;
+        margin: 1rem;
+    }
+    .experience_list > li {
+        display: flex;
+        width: 100%;
+        align-items: stretch;
+    }
+    .experience_list li header {
+        display: flex;
+        width: 15vw;
+    }
+    .experience_list li div {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
     }
 }
