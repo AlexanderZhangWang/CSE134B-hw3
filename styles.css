@@ -1,5 +1,5 @@
 * {
-    background-color: rgb(15 23 42) !important;
+    background-color: rgb(15 23 42);
     /* border: solid; */
     padding: 0;
     margin: 0;
@@ -44,7 +44,7 @@ aside p {
 .light-white {
     color: #94A3B8;
 }
-strong, bold {
+strong, bold, .resume {
     color: #E2E8F0;
 }
 li header {
@@ -69,27 +69,31 @@ nav {
 .logo:hover {
     fill: #E2E8F0;
 }
-.experience_list {
+.experience_list, .project_list {
     list-style: none;
     padding: 0;
     margin: 0;
 }
-.experience_list li {
+.experience_list > li, .project_list > li {
+    margin: 1rem;
+    padding: 1rem;
+}
+.skill li {
     margin-bottom: 0.5rem;
     margin-top: 0.5rem;
 }
-.experience_list li header {
+.experience_list li header, .project_list li header {
     margin: 0.2rem;
     padding: 0.2rem;
 }
-.experience_list li div h3 {
+.experience_list li div h3, .project_list li div h3 {
     margin: 0.2rem;
     padding: 0.2rem;
 }
 .experience_list li div h3 em {
     display: inline;
 }
-.experience_list li div p {
+.experience_list li div p, .project_list li div p {
     margin: 0.2rem;
     padding: 0.2rem;
 }
@@ -115,14 +119,19 @@ nav {
     font-size: 1rem;
 }
 .resume {
-    margin: 0.2rem;
+    margin: 0.2rem 2rem;
     padding: 0.4rem;
     border-radius: 5px;
+
+}
+img {
+    border: solid;
+    color: #64748B;
 }
 /* Phone */
 @media (max-width: 480px) {
     * {
-        background-color: blue;
+        /* background-color: blue; */
     }
     body > header {
         flex-direction: column;
@@ -130,11 +139,16 @@ nav {
     #myself, aside {
         width: 100%;
     }
+    img {
+        width: 70vw;
+        height: 70vh;
+        object-fit: cover; 
+    }  
 }
 /* Laptop */
 @media (min-width: 481px) and (max-width: 1024px) {
     * {
-        background-color: yellow;
+        /* background-color: yellow; */
     }
     body > header {
         flex-direction: column;
@@ -147,16 +161,15 @@ nav {
         margin: 0.2rem;
         padding: 0.2rem;
     }
-    .experience_list > li {
+    .experience_list > li, .project_list > li {
         display: flex;
-        width: 100%;
         align-items: stretch;
     }
-    .experience_list li header {
+    .experience_list li header, .project_list li header {
         display: flex;
         width: 15vw;
     }
-    .experience_list li div {
+    .experience_list li div, .project_list li div{
         flex: 1;
         display: flex;
         flex-direction: column;
@@ -164,11 +177,16 @@ nav {
     .experience_list li div h3 em {
         display: block;
     }
+    img {
+        width: 60vw;
+        height: 50vh;
+        object-fit: contain; 
+    }  
 }
 /* Destop */
 @media (min-width: 1025px) {
     * {
-        background-color: green;
+        /* background-color: green; */
     }
     body > header {
         flex-direction: row;
@@ -184,18 +202,23 @@ nav {
         width: 50%;
         margin: 1rem;
     }
-    .experience_list > li {
+    .experience_list > li, .project_list > li {
         display: flex;
-        width: 100%;
+        /* width: 100%; */
         align-items: stretch;
     }
-    .experience_list li header {
+    .experience_list li header, .project_list li header {
         display: flex;
         width: 15vw;
     }
-    .experience_list li div {
+    .experience_list li div, .project_list li div {
         flex: 1;
         display: flex;
         flex-direction: column;
     }
+    img {
+        width: 60vw;
+        height: 50vh;
+        object-fit: contain; 
+    } 
 }
